@@ -1,0 +1,114 @@
+      body {
+        font-family: 'Lato', Arial, sans-serif;
+        text-align: center;
+      }
+
+      html { 
+        background: url(images/catsbig300dpi.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+      
+      html.etc {
+     background: url(images/kitchentall300dpi.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+   }
+    
+/******************
+Site Title
+******************/
+      .header {
+        font-size: 2.25em;
+        line-height: .05;
+        color: #62d2d3;
+        padding: 0px;   
+        margin-top: -15px;
+        text-shadow: 3px 3px 5px black;     
+      }
+      
+      .header h1  {
+        font-weight: 300;
+      }
+      
+      .header h2  {
+        font-size: 2em;
+        font-weight: 100;
+      }
+      
+/******************
+Main Links
+******************/
+  
+    #wrapper {
+      width: 960px;
+      margin: 0 auto;
+      }
+   
+    div .links {
+      margin: 220px 10px 20px 10px;
+    }
+   
+   .links a {
+     text-decoration: none;
+     padding: 10px;
+     margin: 0px 5px;
+   }   
+  
+  .etclinks a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    font-size: 2em;
+    font-weight: 100;
+    text-shadow: 3px 3px 5px black;
+  }
+   
+      
+/******************
+Contact Links
+******************/
+
+      div.contact {
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      margin: 0px 115px 0px 115px;
+      display: center;
+      }
+      
+      .contact a {
+        color: #62d2d3;
+        text-decoration: none;
+        font-weight: 100;
+      }
+      
+      .column1, .column3 {
+        width: 300px;
+        float: left;
+        margin: 0px 8px 0px 8px;
+      }
+      
+      .column2 {
+        width: 60px;
+        float: left;
+        margin: 0px 8px 0px 8px;
+      }      
+      
+      .contact a, #licensing {
+        float: right;
+        text-align: right;
+      }
+      
+      .contact a, #contact {
+        float: left;
+        text-align: left;
+      }
+      
+      .bold {
+        font-weight: 500;
+      }
