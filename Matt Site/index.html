@@ -12,31 +12,34 @@
     </div>
     
     <div id="wrapper">
-        <div class="links">
-          <a href="http://mattduncan.bandcamp.com/">
-            <img src="images/audio.png" 
-               onmouseover="this.src='images/audio_hover.png'" 
-               onmouseout="this.src='images/audio.png'"
-               alt="audio">
-          </a>
-          <a href="http://www.youtube.com/watch?v=HnpJpojfgQQ">
-            <img src="images/video.png" 
-              onmouseover="this.src='images/video_hover.png'" 
-              onmouseout="this.src='images/video.png'"
-              alt="video">
-          </a>
-          <a id="etc" href="etc.html">
-            <img src="images/etc.png" 
-              onmouseover="this.src='images/etc_hover.png'" 
-              onmouseout="this.src='images/etc.png'"
-            alt="etcetera">
-          </a>
+       
+        <div id="links">
+          <div id="audio">
+            <a href="http://mattduncan.bandcamp.com/">
+              <img class="bottom" src="images/audio_hover.png" />
+              <img class="top" src="images/audio.png" />
+            </a>
+          </div>
+          
+          <div id="video">
+            <a href="http://www.youtube.com/watch?v=HnpJpojfgQ">
+              <img class="bottom" src="images/video_hover.png" />
+              <img class="top" src="images/video.png" />
+            </a>
+          </div>
+          
+           <div id="etc">
+            <a href="etc.html">
+              <img class="bottom" src="images/etc_hover.png" />
+              <img class="top" src="images/etc.png" />
+            </a>
+          </div>                  
         </div>
+      
       
       <div class="contact">
          <div class="column1">
-           <a id="licensing" href="mailto:chris@ghost-town.com">Chris@ghost-town.com
-            <br>
+           <a id="licensing" href="mailto:chris@ghost-town.com">Chris@ghost-town.com<br>
               <span class="bold">Licensing</span>
            </a>
          </div>
@@ -46,8 +49,7 @@
          </div>
          
          <div class="column3">
-           <a id="contact" href="mailto:mattorduncan@gmail.com">mattorduncan@gmail.com
-             <br>
+           <a id="contact" href="mailto:mattorduncan@gmail.com">mattorduncan@gmail.com<br>
               <span class="bold">Contact</span>
            </a>
          </div>

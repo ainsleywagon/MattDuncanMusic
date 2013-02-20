@@ -1,6 +1,7 @@
       body {
         font-family: 'Lato', Arial, sans-serif;
         text-align: center;
+        margin: 0px;
       }
 
       html { 
@@ -27,8 +28,8 @@ Site Title
         line-height: .05;
         color: #62d2d3;
         padding: 0px;   
-        margin-top: -15px;
-        text-shadow: 3px 3px 5px black;     
+        margin-top: -5px;
+        text-shadow: 3px 3px 10px black;     
       }
       
       .header h1  {
@@ -44,43 +45,106 @@ Site Title
 Main Links
 ******************/
   
-    #wrapper {
-      width: 960px;
-      margin: 0 auto;
-      }
-   
-    div .links {
-      margin: 220px 10px 20px 10px;
-    }
-   
-   .links a {
-     text-decoration: none;
-     padding: 10px;
-     margin: 0px 5px;
-   }   
+
+    div #links { /* this is supposed to center everything vertically and horizontally*/
+    width: 100%;
+
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    margin-top: 180px;
+}
   
-  .etclinks a {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: left;
-    display: block;
-    font-size: 2em;
-    font-weight: 100;
-    text-shadow: 3px 3px 5px black;
-  }
-   
+#audio {
+  display: inline-block;
+  position:relative;
+  height:140px;
+  width:140px;
+  margin:0 auto;
+}
+
+#audio img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#audio img.bottom {
+  opacity: 0.8;
+}
+
+#audio img.top:hover {
+  opacity:0;
+}
+
+#video {
+  display: inline-block;
+  position:relative;
+  height:140px;
+  width:140px;
+  margin:0 auto;
+}
+
+#video img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#video img.bottom {
+  opacity: 0.8;
+}
+
+#video img.top:hover {
+  opacity:0;
+}
+
+#etc {
+  display: inline-block;
+  position:relative;
+  height:140px;
+  width:140px;
+  margin:0 auto;
+}
+
+#etc img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#etc img.bottom {
+  opacity: 0.8;
+}
+
+#etc img.top:hover {
+  opacity:0;
+}   
       
 /******************
 Contact Links
 ******************/
-
       div.contact {
-      padding-bottom: 25px;
-      text-transform: uppercase;
-      margin: 0px 115px 0px 115px;
-      display: center;
+        text-transform: uppercase;
+        background-color: rgba(255,255,255,0.75); 
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
       }
-      
+
       .contact a {
         color: #62d2d3;
         text-decoration: none;
@@ -88,15 +152,16 @@ Contact Links
       }
       
       .column1, .column3 {
-        width: 300px;
-        float: left;
-        margin: 0px 8px 0px 8px;
+        width: 250px;
+        display: inline-block;
+        text-align-vertical: center;
       }
       
       .column2 {
-        width: 60px;
-        float: left;
-        margin: 0px 8px 0px 8px;
+        width: 47px;
+        display: inline-block;
+        text-align-vertical: center;
+
       }      
       
       .contact a, #licensing {
