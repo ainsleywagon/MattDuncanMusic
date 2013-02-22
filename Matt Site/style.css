@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+      
       body {
         font-family: 'Lato', Arial, sans-serif;
         text-align: center;
@@ -5,20 +7,36 @@
       }
 
       html { 
-        background: url(images/catsbig300dpi.jpg) no-repeat center center fixed; 
+        background: url(images/catsbig150dpi.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover;      
         }
+        
+<!--[if IE]>
+      img.bg {
+      	/* Set rules to fill background */
+      	min-height: 100%;
+      	min-width: 1024px;
+      	
+      	/* Set up proportionate scaling */
+      	width: 100%;
+      	height: auto;
+      	
+      	/* Set up positioning */
+      	position: fixed;
+      	top: 0;
+      	left: 0;
+      }
       
-      html.etc {
-     background: url(images/kitchentall300dpi.jpg) no-repeat center center fixed; 
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
+      @media screen and (max-width: 1024px) { /* Specific to this particular image */
+      	img.bg {
+      		left: 50%;
+      		margin-left: -512px;   /* 50% */
+      	}
+      }
+<!--[end if IE]>
     
 /******************
 Site Title
@@ -43,100 +61,49 @@ Site Title
       
 /******************
 Main Links
-******************/
-  
+******************/  
 
     div #links { /* this is supposed to center everything vertically and horizontally*/
-    width: 100%;
-
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
-    margin-top: 180px;
-}
+      position: relative;
+      left:0px;
+      bottom: 0px;
+      width:100%;
+      margin: auto;
+      }
+   
+    
+    #links a {
+      display: inline-block;
+      position: relative;
+/*
+      height:140px;
+      width:140px;
+*/
+      margin:0 auto;
+    }
   
-#audio {
-  display: inline-block;
-  position:relative;
-  height:140px;
-  width:140px;
-  margin:0 auto;
-}
-
-#audio img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#audio img.bottom {
-  opacity: 0.75;
-}
-
-#audio img.top:hover {
-  opacity:0;
-}
-
-#video {
-  display: inline-block;
-  position:relative;
-  height:140px;
-  width:140px;
-  margin:0 auto;
-}
-
-#video img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#video img.bottom {
-  opacity: 0.8;
-}
-
-#video img.top:hover {
-  opacity:0;
-}
-
-#etc {
-  display: inline-block;
-  position:relative;
-  height:140px;
-  width:140px;
-  margin:0 auto;
-}
-
-#etc img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#etc img.bottom {
-  opacity: 0.8;
-}
-
-#etc img.top:hover {
-  opacity:0;
-}   
+    #links a img {
+      position:absolute;
+      left:0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+      
+    }
+  
+    #links a img.bottom {
+      opacity: 0.75;
+    }
+    
+    #links a img.top:hover {
+      opacity: 0;
+    }
       
 /******************
 Contact Links
 ******************/
+      
       div.contact {
         text-transform: uppercase;                
         margin-top: 25px;
@@ -145,7 +112,7 @@ Contact Links
         padding: 5px 0px 5px 0px;
         font-size: 1.1em;
         
-        /* BEGIN BROWSER-COMPATIBLE GRADIENTS MOTHAFUCKAAAAA */
+/* BROWSER-COMPATIBLE GRADIENTS */
         background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.4)), color-stop(100%,rgba(255,255,255,0.4))); /* Chrome,Safari4+ */
         background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(255,255,255,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -153,7 +120,7 @@ Contact Links
         background: -ms-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(255,255,255,0.4) 100%); /* IE10+ */
         background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(255,255,255,0.4) 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66ffffff',GradientType=0 ); /* IE6-9 */      
-        /* END BROWSER-COMPATIBLE GRADIENTS MOTHAFUCKAAAAA */
+/*  BROWSER-COMPATIBLE GRADIENTS */
       }
 
       .contact a {
@@ -186,3 +153,16 @@ Contact Links
       .bold {
         font-weight: 500;
       }
+      
+      #footer {
+       position:fixed;
+       left:0px;
+       bottom:0px;
+       width:100%;
+    }
+    
+    /* IE 6 */
+    * html #footer {
+       position:absolute;
+       top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+    }
