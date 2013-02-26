@@ -41,49 +41,44 @@
 /******************
 Site Title
 ******************/
-      .header {
-        font-size: 2.25em;
-        line-height: .05;
-        color: #62d2d3;
-        padding: 0px;   
-        margin-top: -5px;
-        text-shadow: 3px 3px 10px black;     
-      }
-      
-      .header h1  {
-        font-weight: 300;
-      }
-      
-      .header h2  {
-        font-size: 2em;
-        font-weight: 100;
-      }
+
+
+    #header img {
+    display: block;
+    width: 75%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    } 
       
 /******************
 Main Links
 ******************/  
 
-    div #links { /* this is supposed to center everything vertically and horizontally*/
+    #linkcloud { 
       position: relative;
-      left:0px;
-      bottom: 0px;
-      width:100%;
-      margin: auto;
+      float: left;
+      left: 57%;
+      bottom: 100px;
       }
-   
-    
-    #links a {
-      display: inline-block;
+      
+    #link {
+      float: left;
       position: relative;
-/*
-      height:140px;
+      left: -50%;
+    }
+    
+    #linkcloud a {
+      display: block;
+      float: left;
+      left: -50%;
+      position: relative;
+      height: 140px;
       width:140px;
-*/
-      margin:0 auto;
+      margin:3px;
     }
   
-    #links a img {
-      position:absolute;
+    #linkcloud a img {
+      position: absolute;
       left:0;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
@@ -92,22 +87,21 @@ Main Links
       
     }
   
-    #links a img.bottom {
+    #linkcloud a img.bottom {
       opacity: 0.75;
     }
     
-    #links a img.top:hover {
+    #linkcloud a img.top:hover {
       opacity: 0;
     }
-      
+    
 /******************
 Contact Links
 ******************/
       
       div.contact {
         text-transform: uppercase;                
-        margin-top: 25px;
-        width: 100%;
+        margin-top: 60px;
         height: auto;
         padding: 5px 0px 5px 0px;
         font-size: 1.1em;
@@ -153,13 +147,15 @@ Contact Links
       .bold {
         font-weight: 500;
       }
-      
-      #footer {
+
+      #wrapper {
        position:fixed;
        left:0px;
        bottom:0px;
        width:100%;
-    }
+       }
+      
+
     
     /* IE 6 */
     * html #footer {
