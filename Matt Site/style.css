@@ -5,6 +5,7 @@
         text-align: center;
         margin: 0px;
         width: 100%;
+        height: 100%;
       }
 
       html { 
@@ -12,7 +13,8 @@
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;      
+        background-size: cover;
+        height: 100%;      
         }
         
 <!--[if IE]>
@@ -44,7 +46,7 @@ Site Title
 ******************/
 
 
-    #header img {
+    #title img {
     display: block;
     width: 75%;
     height: auto;
@@ -62,7 +64,7 @@ Main Links
       bottom: 100px;
       }
       
-    #link {
+    .link {
       float: left;
       position: relative;
       left: -50%;
@@ -100,12 +102,14 @@ Main Links
 Contact Links
 ******************/
       
-      div.contact {
+      div#contactcloud {
         text-transform: uppercase;                
         margin-top: 60px;
         height: auto;
-        padding: 5px 0px 5px 0px;
         font-size: 1.1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
         
 /* BROWSER-COMPATIBLE GRADIENTS */
         background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 100%); /* FF3.6+ */
@@ -118,32 +122,39 @@ Contact Links
 /*  BROWSER-COMPATIBLE GRADIENTS */
       }
 
-      .contact a {
+      #contactcloud a {
         color: #62d2d3;
         text-decoration: none;
         font-weight: 100;
+        display: block;
       }
       
-      .column1, .column3 {
-        width: 250px;
+      #contactcloud p {
+        color: #62d2d3;
+      }
+      
+      .row-fluid {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .span5, .span2 {
         display: inline-block;
-        margin-bottom: 22px;
       }
       
-      .column2 {
+      .span2 {
         width: 47px;
-        display: inline-block;
-      }      
+      }
       
-      .contact a, #licensing {
-        float: right;
+      #licensing {
         text-align: right;
+        display: block;
       }
       
-      .contact a, #contact {
-        float: left;
+      #contact {
         text-align: left;
-      }
+        display: block;
+      }     
       
       .bold {
         font-weight: 500;
