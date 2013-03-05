@@ -21,7 +21,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -145,7 +144,7 @@ Contact Links
       
       #footer {
         text-transform: uppercase;                
-        margin-top: 60px;
+        margin-top: 28px;
         height: auto;
         font-size: 1.1em;
         margin-left: auto;
@@ -194,11 +193,12 @@ Contact Links
       #licensing {
         text-align: right;
         display: block;
-      }
+        }
       
       #contact {
         text-align: left;
         display: block;
+        margin: 10px 2px;
       }     
       
       .bold {
